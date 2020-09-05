@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kerac's Animation WIP</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: black;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+</head>
+<body>
+<div class="video-container">
+<video controls loop autoplay>
+  <source id="vid" src="" type="video/mp4">
+</video>
+</div>
+</body>
+<script>
+	var params = new URLSearchParams(window.location.search);
+	window.params = params;
+	var id = params.get('id') || undefined;
+	document.getElementById("vid").setAttribute("src", "https://puu.sh/" + id);
+</script>
+</html>
