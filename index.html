@@ -36,6 +36,10 @@ video {
 	var params = new URLSearchParams(window.location.search);
 	window.params = params;
 	var id = params.get('id') || undefined;
+	var title = params.get('title') || undefined;
+	if (title) {
+		document.title = title;
+	}
 	document.getElementById("vid").setAttribute("src", "https://puu.sh/" + id);
 </script>
 </html>
