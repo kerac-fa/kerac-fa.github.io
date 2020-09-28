@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Kerac's Animation WIP</title>
+  <title>Kerac Animation</title>
 <style>
 body {
   margin: 0;
@@ -37,9 +37,14 @@ video {
 	window.params = params;
 	var id = params.get('id') || undefined;
 	var title = params.get('title') || undefined;
+	if (id.includes(".mp4")) {
+		document.getElementById("vid").setAttribute("src", "https://puu.sh/" + id);
+	}
+	else {
+		document.getElementById("vid").setAttribute("src", "https://drive.google.com/uc?export=download&id=" + id);
+	}
 	if (title) {
 		document.title = title;
 	}
-	document.getElementById("vid").setAttribute("src", "https://puu.sh/" + id);
 </script>
 </html>
