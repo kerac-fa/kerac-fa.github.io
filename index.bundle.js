@@ -2055,7 +2055,7 @@ module.exports = __webpack_require__.p + "d143f6e15a5b4a6c52f6.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "531f3717aa0d6c348239.png";
+module.exports = __webpack_require__.p + "e759a41a23c53d3fc1e0.png";
 
 /***/ }),
 
