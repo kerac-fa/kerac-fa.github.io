@@ -1,50 +1,40 @@
+<!doctype html>
+
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Kerac Animation</title>
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  
-  width: 100vw;
-  height: 100vh;
-  
-  background-color: black;
-}
+    <title>The Arcade Revival Gambit - LIFC 2025</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/webp" href="e0f426487696fc6fad51.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    <meta name="description" content="Join the LIFC 2025 arcade-themed puzzle hunt!" />
+    <meta name="author" content="Little Island Furcon" />
+    <meta name="keywords" content="little island furcon fur con furry convention lifc singapore" />
+    <meta name="language" content="english" />
+    <meta name="copyright" content="Little Island Furcon" />
+    <meta name="distribution" content="global" />
 
-video {
-  width: 100vw;
-  height: 100vh;
-}
-</style>
-</head>
+    <meta property="og:title" content="The Arcade Revival Gambit - LIFC 2025" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.littleislandfur.com/2025/arg" />
+    <meta property="og:description" content="Join the LIFC 2025 arcade-themed puzzle hunt!" />
+    <meta property="og:image" content="https://www.littleislandfur.com/2025/arg/site-preview.jpg" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@LittleIslandFC" />
+    <meta property="twitter:title" content="The Arcade Revival Gambit - LIFC 2025" />
+    <meta property="twitter:description" content="Join the LIFC 2025 arcade-themed puzzle hunt!" />
+    <meta property="twitter:image" content="https://www.littleislandfur.com/2025/arg/site-preview.png" />
+    <meta property="twitter:url" content="https://www.littleislandfur.com/2025/arg" />
+    <meta property="twitter:domain" content="littleislandfur.com" />
+<script defer src="vendors-node_modules_classnames_index_js-node_modules_css-loader_dist_runtime_api_js-node_mod-b1621e.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+
 <body>
-<div class="video-container">
-<video controls loop autoplay muted>
-  <source id="vid" src="" type="video/mp4">
-</video>
-</div>
+    <div id="root"></div>
 </body>
-<script>
-	var params = new URLSearchParams(window.location.search);
-	window.params = params;
-	var id = params.get('id') || undefined;
-	var title = params.get('title') || undefined;
-	if (id.includes(".mp4")) {
-		document.getElementById("vid").setAttribute("src", "https://puu.sh/" + id);
-	}
-	else {
-		document.getElementById("vid").setAttribute("src", "https://drive.google.com/uc?export=download&id=" + id);
-	}
-	if (title) {
-		document.title = title;
-	}
-</script>
+
 </html>
